@@ -33,8 +33,8 @@ Rails.application.configure do
     domain: Rails.application.secrets.domain_name,
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: Rails.application.secrets.username,
-    password: Rails.application.secrets.password
+    user_name: Rails.application.secrets.email_provider_username,
+    password: Rails.application.secrets.email_provider_password
   }
 
   #ActionMailer Config
